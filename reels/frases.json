@@ -1,0 +1,542 @@
+{
+ "oficina": {
+  "nombre": "Coworker & job gifts",
+  "items": [
+   {
+    "id": "of01",
+    "frase": "Your Last Reply-All",
+    "ocasion": "Farewell gift for coworker"
+   },
+   {
+    "id": "of02",
+    "frase": "You Finally Escaped",
+    "ocasion": "Leaving job gift"
+   },
+   {
+    "id": "of03",
+    "frase": "Two Weeks' Notice",
+    "ocasion": "New job gift"
+   },
+   {
+    "id": "of04",
+    "frase": "We'll Pretend to Stay in Touch",
+    "ocasion": "Coworker leaving gift"
+   },
+   {
+    "id": "of05",
+    "frase": "Every Day Is Saturday Now",
+    "ocasion": "Retirement gift"
+   },
+   {
+    "id": "of06",
+    "frase": "Another Lap Around the Office",
+    "ocasion": "Work anniversary gift"
+   },
+   {
+    "id": "of07",
+    "frase": "Promoted & Slightly Panicked",
+    "ocasion": "Promotion gift"
+   },
+   {
+    "id": "of08",
+    "frase": "First Day Jitters",
+    "ocasion": "New job congrats gift"
+   },
+   {
+    "id": "of09",
+    "frase": "The Office Just Got Boring",
+    "ocasion": "Farewell gift for coworker"
+   },
+   {
+    "id": "of10",
+    "frase": "Retired: Calendar Optional",
+    "ocasion": "Retirement gift"
+   },
+   {
+    "id": "of11",
+    "frase": "Muted on Every Call",
+    "ocasion": "Remote worker gift"
+   },
+   {
+    "id": "of12",
+    "frase": "Circling Back, Again",
+    "ocasion": "Funny coworker gift"
+   },
+   {
+    "id": "of13",
+    "frase": "Survived Another Performance Review",
+    "ocasion": "Coworker gift"
+   },
+   {
+    "id": "of14",
+    "frase": "Desk Plant Keeper",
+    "ocasion": "Office gift for her"
+   },
+   {
+    "id": "of15",
+    "frase": "Zoom Background Hero",
+    "ocasion": "Work from home gift"
+   },
+   {
+    "id": "of16",
+    "frase": "Coffee First, Meetings Never",
+    "ocasion": "Boss gift"
+   },
+   {
+    "id": "of17",
+    "frase": "Unofficial Office Therapist",
+    "ocasion": "Coworker appreciation gift"
+   },
+   {
+    "id": "of18",
+    "frase": "Spreadsheet Wizard Retiring",
+    "ocasion": "Retirement gift for her"
+   },
+   {
+    "id": "of19",
+    "frase": "Last Day, No Regrets",
+    "ocasion": "Last day at work gift"
+   },
+   {
+    "id": "of20",
+    "frase": "Hired! Now Pretend to Know Stuff",
+    "ocasion": "New job gift for friend"
+   }
+  ]
+ },
+ "navidad": {
+  "nombre": "Funny Christmas & Secret Santa",
+  "items": [
+   {
+    "id": "na01",
+    "frase": "I Had No Idea What to Get You",
+    "ocasion": "Secret Santa gift"
+   },
+   {
+    "id": "na02",
+    "frase": "A Very Last-Minute Gift",
+    "ocasion": "Funny Christmas gift"
+   },
+   {
+    "id": "na03",
+    "frase": "Secret Santa Blew the Budget",
+    "ocasion": "Secret Santa gift"
+   },
+   {
+    "id": "na04",
+    "frase": "Surviving the Family Group Chat",
+    "ocasion": "Christmas gift for sister"
+   },
+   {
+    "id": "na05",
+    "frase": "Pretending to Love Your Gift",
+    "ocasion": "White elephant gift"
+   },
+   {
+    "id": "na06",
+    "frase": "Leftover Pie for Breakfast",
+    "ocasion": "Holiday hostess gift"
+   },
+   {
+    "id": "na07",
+    "frase": "Untangling the Lights. Again.",
+    "ocasion": "Funny Christmas gift for dad"
+   },
+   {
+    "id": "na08",
+    "frase": "Coal Was Sold Out",
+    "ocasion": "Funny Christmas gift for best friend"
+   },
+   {
+    "id": "na09",
+    "frase": "Hiding From the In-Laws",
+    "ocasion": "Christmas gift for wife"
+   },
+   {
+    "id": "na10",
+    "frase": "Wrapping Paper Everywhere",
+    "ocasion": "Christmas gift for mom"
+   },
+   {
+    "id": "na11",
+    "frase": "Regifted With Love",
+    "ocasion": "White elephant gift"
+   },
+   {
+    "id": "na12",
+    "frase": "Cookies Before Dinner",
+    "ocasion": "Christmas gift for kids at heart"
+   },
+   {
+    "id": "na13",
+    "frase": "Tacky Sweater Champion",
+    "ocasion": "Ugly sweater party gift"
+   },
+   {
+    "id": "na14",
+    "frase": "Elf on Strike",
+    "ocasion": "Funny Christmas gift for mom"
+   },
+   {
+    "id": "na15",
+    "frase": "Holiday Budget Destroyed",
+    "ocasion": "Secret Santa gift under 25"
+   },
+   {
+    "id": "na16",
+    "frase": "Eggnog Made Me Do It",
+    "ocasion": "Christmas party gift"
+   },
+   {
+    "id": "na17",
+    "frase": "Fruitcake Survivor",
+    "ocasion": "Funny holiday gift"
+   },
+   {
+    "id": "na18",
+    "frase": "Mistletoe Avoidance Club",
+    "ocasion": "Office Christmas gift"
+   },
+   {
+    "id": "na19",
+    "frase": "Santa Saw Everything",
+    "ocasion": "Funny Christmas gift for friend"
+   },
+   {
+    "id": "na20",
+    "frase": "New Year, Same Excuses",
+    "ocasion": "New Years gift"
+   }
+  ]
+ },
+ "profesiones": {
+  "nombre": "Profession gifts",
+  "items": [
+   {
+    "id": "pr01",
+    "frase": "A Twelve-Hour Shift",
+    "ocasion": "Nurse gift"
+   },
+   {
+    "id": "pr02",
+    "frase": "Summer Break Is Coming",
+    "ocasion": "Teacher appreciation gift"
+   },
+   {
+    "id": "pr03",
+    "frase": "It Worked on My Machine",
+    "ocasion": "Software engineer gift"
+   },
+   {
+    "id": "pr04",
+    "frase": "Tax Season Is Over",
+    "ocasion": "Accountant gift"
+   },
+   {
+    "id": "pr05",
+    "frase": "Officially Billable",
+    "ocasion": "Law school graduation gift"
+   },
+   {
+    "id": "pr06",
+    "frase": "Muddy Paws & Big Hearts",
+    "ocasion": "Vet tech gift"
+   },
+   {
+    "id": "pr07",
+    "frase": "Hairspray & Gossip",
+    "ocasion": "Hairstylist gift"
+   },
+   {
+    "id": "pr08",
+    "frase": "Have You Been Flossing?",
+    "ocasion": "Dental hygienist gift"
+   },
+   {
+    "id": "pr09",
+    "frase": "I Can Read Doctors' Handwriting",
+    "ocasion": "Pharmacist gift"
+   },
+   {
+    "id": "pr10",
+    "frase": "Call Me Doctor Now",
+    "ocasion": "PhD graduation gift"
+   }
+  ]
+ },
+ "cumple": {
+  "nombre": "Funny birthday gifts",
+  "items": [
+   {
+    "id": "cu01",
+    "frase": "Thirty and Still Confused",
+    "ocasion": "30th birthday gift"
+   },
+   {
+    "id": "cu02",
+    "frase": "Forty, Fabulous & Mildly Tired",
+    "ocasion": "40th birthday gift"
+   },
+   {
+    "id": "cu03",
+    "frase": "Fifty and Still Not a Real Adult",
+    "ocasion": "50th birthday gift"
+   },
+   {
+    "id": "cu04",
+    "frase": "Old Enough to Complain About Music",
+    "ocasion": "Birthday gift for him"
+   },
+   {
+    "id": "cu05",
+    "frase": "Another Trip Around the Sun, Barely",
+    "ocasion": "Funny birthday gift"
+   },
+   {
+    "id": "cu06",
+    "frase": "Sixty and Done Being Polite",
+    "ocasion": "60th birthday gift"
+   },
+   {
+    "id": "cu07",
+    "frase": "Finally Twenty-One",
+    "ocasion": "21st birthday gift"
+   },
+   {
+    "id": "cu08",
+    "frase": "Your Knees Are Older Than You",
+    "ocasion": "Birthday gift for dad"
+   },
+   {
+    "id": "cu09",
+    "frase": "Birthday Nap Approved",
+    "ocasion": "Birthday gift for her"
+   },
+   {
+    "id": "cu10",
+    "frase": "Aged Like Fine Cheese",
+    "ocasion": "Funny birthday gift for friend"
+   }
+  ]
+ },
+ "boda": {
+  "nombre": "Wedding & bridesmaid gifts",
+  "items": [
+   {
+    "id": "bo01",
+    "frase": "Will You Hold My Dress While I Pee?",
+    "ocasion": "Bridesmaid proposal gift"
+   },
+   {
+    "id": "bo02",
+    "frase": "Engaged and Already Overthinking",
+    "ocasion": "Engagement gift"
+   },
+   {
+    "id": "bo03",
+    "frase": "Future Mrs. & Unpaid Wedding Planner",
+    "ocasion": "Bride to be gift"
+   },
+   {
+    "id": "bo04",
+    "frase": "We Survived the Seating Chart",
+    "ocasion": "Wedding gift for couple"
+   },
+   {
+    "id": "bo05",
+    "frase": "Just Married, Mostly Broke",
+    "ocasion": "Funny wedding gift"
+   },
+   {
+    "id": "bo06",
+    "frase": "Maid of Honor, Keeper of Secrets",
+    "ocasion": "Maid of honor gift"
+   },
+   {
+    "id": "bo07",
+    "frase": "Bachelorette Recovery Mode",
+    "ocasion": "Bachelorette party gift"
+   },
+   {
+    "id": "bo08",
+    "frase": "Said Yes Before Coffee",
+    "ocasion": "Engagement gift for her"
+   },
+   {
+    "id": "bo09",
+    "frase": "First Anniversary, Still Laughing",
+    "ocasion": "First anniversary gift"
+   },
+   {
+    "id": "bo10",
+    "frase": "Ten Years of Stealing the Blanket",
+    "ocasion": "10th anniversary gift"
+   }
+  ]
+ },
+ "familia": {
+  "nombre": "Family gifts",
+  "items": [
+   {
+    "id": "fa01",
+    "frase": "Thanks for Not Selling Me",
+    "ocasion": "Gift for mom from daughter"
+   },
+   {
+    "id": "fa02",
+    "frase": "Raised a Legend, Obviously",
+    "ocasion": "Mothers day gift"
+   },
+   {
+    "id": "fa03",
+    "frase": "Dad Jokes Fully Loaded",
+    "ocasion": "Gift for dad"
+   },
+   {
+    "id": "fa04",
+    "frase": "Grandma's Rules Apply Here",
+    "ocasion": "Gift for grandma"
+   },
+   {
+    "id": "fa05",
+    "frase": "Survived My Teenage Years",
+    "ocasion": "Gift for mom"
+   },
+   {
+    "id": "fa06",
+    "frase": "New Dad, No Sleep",
+    "ocasion": "New dad gift"
+   },
+   {
+    "id": "fa07",
+    "frase": "Not Technically Mom, Totally Mom",
+    "ocasion": "Stepmom gift"
+   },
+   {
+    "id": "fa08",
+    "frase": "Sister, Therapist, Partner in Crime",
+    "ocasion": "Gift for sister"
+   },
+   {
+    "id": "fa09",
+    "frase": "Brother Who Still Owes Me Twenty Bucks",
+    "ocasion": "Gift for brother"
+   },
+   {
+    "id": "fa10",
+    "frase": "Mother-in-Law Who Actually Gets Me",
+    "ocasion": "Gift for mother in law"
+   }
+  ]
+ },
+ "casa": {
+  "nombre": "Home & housewarming gifts",
+  "items": [
+   {
+    "id": "ca01",
+    "frase": "First Home, Zero Furniture",
+    "ocasion": "Housewarming gift"
+   },
+   {
+    "id": "ca02",
+    "frase": "Our First Mortgage Payment",
+    "ocasion": "New homeowner gift"
+   },
+   {
+    "id": "ca03",
+    "frase": "Finally Not Paying Rent",
+    "ocasion": "First home gift"
+   },
+   {
+    "id": "ca04",
+    "frase": "Boxes Still Unpacked",
+    "ocasion": "Moving gift"
+   },
+   {
+    "id": "ca05",
+    "frase": "Weekend Hardware Store Runs",
+    "ocasion": "Housewarming gift for him"
+   },
+   {
+    "id": "ca06",
+    "frase": "Plant Parent, Barely Watering",
+    "ocasion": "Plant lover gift"
+   },
+   {
+    "id": "ca07",
+    "frase": "Dog Hair on Everything",
+    "ocasion": "Dog mom gift"
+   },
+   {
+    "id": "ca08",
+    "frase": "Cat in Charge Here",
+    "ocasion": "Cat lover gift"
+   },
+   {
+    "id": "ca09",
+    "frase": "Moved Out & Missing Mom's Cooking",
+    "ocasion": "College dorm gift"
+   },
+   {
+    "id": "ca10",
+    "frase": "Fresh Paint and Regret",
+    "ocasion": "New house gift"
+   }
+  ]
+ },
+ "amigos": {
+  "nombre": "Friendship & pick-me-up gifts",
+  "items": [
+   {
+    "id": "am01",
+    "frase": "Freshly Single & Thriving",
+    "ocasion": "Breakup gift"
+   },
+   {
+    "id": "am02",
+    "frase": "Friends Since Bad Haircuts",
+    "ocasion": "Best friend gift"
+   },
+   {
+    "id": "am03",
+    "frase": "Couch Rest, Doctor's Orders",
+    "ocasion": "Get well soon gift"
+   },
+   {
+    "id": "am04",
+    "frase": "One Year Stronger",
+    "ocasion": "Milestone gift for friend"
+   },
+   {
+    "id": "am05",
+    "frase": "Long Distance, Same Sky",
+    "ocasion": "Long distance friendship gift"
+   },
+   {
+    "id": "am06",
+    "frase": "Therapy Is Working",
+    "ocasion": "Self care gift"
+   },
+   {
+    "id": "am07",
+    "frase": "Boundaries Finally Set",
+    "ocasion": "Self care gift for her"
+   },
+   {
+    "id": "am08",
+    "frase": "Ten Thousand Steps Done",
+    "ocasion": "Gift for walker"
+   },
+   {
+    "id": "am09",
+    "frase": "Thank You for Not Ghosting Me",
+    "ocasion": "Funny thank you gift"
+   },
+   {
+    "id": "am10",
+    "frase": "Your Plants Miss You",
+    "ocasion": "Thinking of you gift"
+   }
+  ]
+ }
+}
