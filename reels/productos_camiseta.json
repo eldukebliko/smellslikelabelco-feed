@@ -1,0 +1,398 @@
+{
+ "of16": {
+  "producto": "6ad79ac8ff714daae20c525e",
+  "publicado": true
+ },
+ "of01": {
+  "producto": "6ad79e0bff714daae20c55f3",
+  "publicado": true
+ },
+ "of02": {
+  "producto": "6ad79e12b0c1203caf059bf3",
+  "publicado": true
+ },
+ "of03": {
+  "producto": "6ad79e1aede79e690405eea3",
+  "publicado": true
+ },
+ "of04": {
+  "producto": "6ad79e20c087d2314b0fb09f",
+  "publicado": true
+ },
+ "of05": {
+  "producto": "6ad79e26ff714daae20c5621",
+  "publicado": true
+ },
+ "of06": {
+  "producto": "6ad79e2dc087d2314b0fb0c2",
+  "publicado": true
+ },
+ "of07": {
+  "producto": "6ad79e330167db29180ccc7a",
+  "publicado": true
+ },
+ "of08": {
+  "producto": "6ad79e3bc087d2314b0fb0da",
+  "publicado": true
+ },
+ "of09": {
+  "producto": "6ad79e41b0c1203caf059c36",
+  "publicado": true
+ },
+ "of10": {
+  "producto": "6ad79e47ff714daae20c566b",
+  "publicado": true
+ },
+ "of11": {
+  "producto": "6ad79e4db0c1203caf059c4c",
+  "publicado": true
+ },
+ "of12": {
+  "producto": "6ad79e55d307701882016511",
+  "publicado": true
+ },
+ "of13": {
+  "producto": "6ad79e5b0167db29180ccca0",
+  "publicado": true
+ },
+ "of14": {
+  "producto": "6ad79e61ff714daae20c5682",
+  "publicado": true
+ },
+ "of15": {
+  "producto": "6ad79e66ede79e690405ef15",
+  "publicado": true
+ },
+ "of17": {
+  "producto": "6ad79e6cede79e690405ef20",
+  "publicado": true
+ },
+ "of18": {
+  "producto": "6ad79e738dc0257e9d01313f",
+  "publicado": true
+ },
+ "of19": {
+  "producto": "6ad79e798dc0257e9d013152",
+  "publicado": true
+ },
+ "of20": {
+  "producto": "6ad79e7fede79e690405ef4f",
+  "publicado": true
+ },
+ "na01": {
+  "producto": "6ad79e860167db29180ccce7",
+  "publicado": true
+ },
+ "na02": {
+  "producto": "6ad79e8c0167db29180ccceb",
+  "publicado": true
+ },
+ "na03": {
+  "producto": "6ad79e93b0c1203caf059ca8",
+  "publicado": true
+ },
+ "na04": {
+  "producto": "6ad79e9aff714daae20c56ec",
+  "publicado": true
+ },
+ "na05": {
+  "producto": "6ad79ea0637f9399dd0d9fb3",
+  "publicado": true
+ },
+ "na06": {
+  "producto": "6ad79ea6ede79e690405ef69",
+  "publicado": true
+ },
+ "na07": {
+  "producto": "6ad79eac637f9399dd0d9fc3",
+  "publicado": true
+ },
+ "na08": {
+  "producto": "6ad79eb2c087d2314b0fb168",
+  "publicado": true
+ },
+ "na09": {
+  "producto": "6ad79eb89ee8fe3cb304c3f3",
+  "publicado": true
+ },
+ "na10": {
+  "producto": "6ad79ebfcfe9581c8b0673e3",
+  "publicado": true
+ },
+ "na11": {
+  "producto": "6ad79ec5b0c1203caf059ce8",
+  "publicado": true
+ },
+ "na12": {
+  "producto": "6ad79ecbdb8ebad1630f8b76",
+  "publicado": true
+ },
+ "na13": {
+  "producto": "6ad79ed20167db29180ccd1c",
+  "publicado": true
+ },
+ "na14": {
+  "producto": "6ad79ed88dc0257e9d0131a7",
+  "publicado": true
+ },
+ "na15": {
+  "producto": "6ad79ededb8ebad1630f8b7d",
+  "publicado": true
+ },
+ "na16": {
+  "producto": "6ad79ee4b0c1203caf059d03",
+  "publicado": true
+ },
+ "na17": {
+  "producto": "6ad79eea637f9399dd0d9ff0",
+  "publicado": true
+ },
+ "na18": {
+  "producto": "6ad79ef00167db29180ccd39",
+  "publicado": true
+ },
+ "na19": {
+  "producto": "6ad79ef6d3077018820165bf",
+  "publicado": true
+ },
+ "na20": {
+  "producto": "6ad79efccfe9581c8b06740b",
+  "publicado": true
+ },
+ "pr02": {
+  "producto": "6ad79f020167db29180ccd3f",
+  "publicado": true
+ },
+ "pr03": {
+  "producto": "6ad79f088dc0257e9d0131e1",
+  "publicado": true
+ },
+ "pr04": {
+  "producto": "6ad79f0e8dc0257e9d0131ef",
+  "publicado": true
+ },
+ "pr05": {
+  "producto": "6ad79f140167db29180ccd6a",
+  "publicado": true
+ },
+ "pr06": {
+  "producto": "6ad79f1aede79e690405efbb",
+  "publicado": true
+ },
+ "pr07": {
+  "producto": "6ad79f20b0c1203caf059d51",
+  "publicado": true
+ },
+ "pr08": {
+  "producto": "6ad79f26ede79e690405efc7",
+  "publicado": true
+ },
+ "pr09": {
+  "producto": "6ad79f2dcfe9581c8b067443",
+  "publicado": true
+ },
+ "pr10": {
+  "producto": "6ad79f338dc0257e9d01321a",
+  "publicado": true
+ },
+ "cu01": {
+  "producto": "6ad79f39cfe9581c8b067452",
+  "publicado": true
+ },
+ "cu02": {
+  "producto": "6ad79f3f9ee8fe3cb304c490",
+  "publicado": true
+ },
+ "cu03": {
+  "producto": "6ad79f45ede79e690405efeb",
+  "publicado": true
+ },
+ "cu04": {
+  "producto": "6ad79f4c637f9399dd0da059",
+  "publicado": true
+ },
+ "cu05": {
+  "producto": "6ad79f520167db29180ccd95",
+  "publicado": true
+ },
+ "cu06": {
+  "producto": "6ad79f58ede79e690405f001",
+  "publicado": true
+ },
+ "cu07": {
+  "producto": "6ad79f5f0167db29180ccd9f",
+  "publicado": true
+ },
+ "cu08": {
+  "producto": "6ad79f65ff714daae20c57bb",
+  "publicado": true
+ },
+ "cu09": {
+  "producto": "6ad79f6bff714daae20c57bf",
+  "publicado": true
+ },
+ "cu10": {
+  "producto": "6ad79f71c087d2314b0fb20c",
+  "publicado": true
+ },
+ "bo01": {
+  "producto": "6ad79f77cfe9581c8b06748c",
+  "publicado": true
+ },
+ "bo02": {
+  "producto": "6ad79f7e637f9399dd0da086",
+  "publicado": true
+ },
+ "bo03": {
+  "producto": "6ad79f84637f9399dd0da08e",
+  "publicado": true
+ },
+ "bo04": {
+  "producto": "6ad79f8a637f9399dd0da092",
+  "publicado": true
+ },
+ "bo05": {
+  "producto": "6ad79f90b0c1203caf059db1",
+  "publicado": true
+ },
+ "bo06": {
+  "producto": "6ad79f96c087d2314b0fb240",
+  "publicado": true
+ },
+ "bo07": {
+  "producto": "6ad79f9c9ee8fe3cb304c4d0",
+  "publicado": true
+ },
+ "bo08": {
+  "producto": "6ad79fa1ff714daae20c57e6",
+  "publicado": true
+ },
+ "bo09": {
+  "producto": "6ad79fa80167db29180ccdca",
+  "publicado": true
+ },
+ "bo10": {
+  "producto": "6ad79fae637f9399dd0da0b0",
+  "publicado": true
+ },
+ "fa01": {
+  "producto": "6ad79fb40167db29180ccdd2",
+  "publicado": true
+ },
+ "fa02": {
+  "producto": "6ad79fba49d13ef91309c426",
+  "publicado": true
+ },
+ "fa03": {
+  "producto": "6ad79fc09ee8fe3cb304c4f0",
+  "publicado": true
+ },
+ "fa04": {
+  "producto": "6ad79fc649d13ef91309c439",
+  "publicado": true
+ },
+ "fa05": {
+  "producto": "6ad79fccede79e690405f060",
+  "publicado": true
+ },
+ "fa06": {
+  "producto": "6ad79fd2d307701882016689",
+  "publicado": true
+ },
+ "fa07": {
+  "producto": "6ad79fd89ee8fe3cb304c509",
+  "publicado": true
+ },
+ "fa08": {
+  "producto": "6ad79fde2f113cbc16042470",
+  "publicado": true
+ },
+ "fa09": {
+  "producto": "6ad79fe449d13ef91309c45a",
+  "publicado": true
+ },
+ "fa10": {
+  "producto": "6ad79feb49d13ef91309c465",
+  "publicado": true
+ },
+ "ca01": {
+  "producto": "6ad79ff10167db29180cce0b",
+  "publicado": true
+ },
+ "ca02": {
+  "producto": "6ad79ff7b0c1203caf059dea",
+  "publicado": true
+ },
+ "ca03": {
+  "producto": "6ad79ffdcfe9581c8b067507",
+  "publicado": true
+ },
+ "ca04": {
+  "producto": "6ad7a003ff714daae20c5839",
+  "publicado": true
+ },
+ "ca05": {
+  "producto": "6ad7a009b0c1203caf059df7",
+  "publicado": true
+ },
+ "ca06": {
+  "producto": "6ad7a00fff714daae20c5840",
+  "publicado": true
+ },
+ "ca07": {
+  "producto": "6ad7a015ff714daae20c5849",
+  "publicado": true
+ },
+ "ca08": {
+  "producto": "6ad7a01b49d13ef91309c47f",
+  "publicado": true
+ },
+ "ca09": {
+  "producto": "6ad7a021cfe9581c8b067526",
+  "publicado": true
+ },
+ "ca10": {
+  "producto": "6ad7a02749d13ef91309c48b",
+  "publicado": true
+ },
+ "am01": {
+  "producto": "6ad7a02d9ee8fe3cb304c54c",
+  "publicado": true
+ },
+ "am02": {
+  "producto": "6ad7a0340167db29180cce50",
+  "publicado": true
+ },
+ "am03": {
+  "producto": "6ad7a03a49d13ef91309c497",
+  "publicado": true
+ },
+ "am04": {
+  "producto": "6ad7a03fff714daae20c5868",
+  "publicado": true
+ },
+ "am05": {
+  "producto": "6ad7a045d3077018820166d9",
+  "publicado": true
+ },
+ "am06": {
+  "producto": "6ad7a04b2f113cbc1604249b",
+  "publicado": true
+ },
+ "am07": {
+  "producto": "6ad7a051ff714daae20c5870",
+  "publicado": true
+ },
+ "am08": {
+  "producto": "6ad7a057ff714daae20c5874",
+  "publicado": true
+ },
+ "am09": {
+  "producto": "6ad7a05d9ee8fe3cb304c56e",
+  "publicado": true
+ },
+ "am10": {
+  "producto": "6ad7a0639ee8fe3cb304c573",
+  "publicado": true
+ }
+}

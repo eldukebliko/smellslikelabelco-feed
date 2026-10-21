@@ -26,10 +26,10 @@ def gancho(it):
     return f"LOOKING FOR A {o.upper()} GIFT?"
 
 
-def frames(fid):
+def frames(fid, foto=None, pie="FUNNY SOY CANDLE · 9 OZ"):
     nicho, it = nicho_de(fid)
     tema = TEMAS[nicho]
-    foto = Image.open(BASE / f"pines/mockups/{fid}.jpg").convert("RGB")
+    foto = Image.open(foto or BASE / f"pines/mockups/{fid}.jpg").convert("RGB")
     d0 = ImageDraw.Draw(Image.new("RGB", (W, H)))
     fg, lg, pg = ajustar(d0, gancho(it), lambda s: fuente_shoulders(s, 800), W - 140, 330, 150)
     for i in range(FPS * SEG):
@@ -47,25 +47,24 @@ def frames(fid):
                 d.text(((W - d.textlength(l, font=fg)) / 2, y), l, font=fg, fill=tema["tinta"])
                 y += pg * 1.05
             fb = fuente_bagel(58)
-            pie = "FUNNY SOY CANDLE · 9 OZ"
             d.text(((W - d.textlength(pie, font=fb)) / 2, 1680), pie, font=fb, fill=tema["tinta"])
         else:
             fb, fs = fuente_bagel(110), fuente_shoulders(64, 700)
             for txt, f, y in (("SMELLS LIKE", fs, 640), ("LABEL CO", fb, 720)):
                 d.text(((W - d.textlength(txt, font=f)) / 2, y), txt, font=f, fill=tema["tinta"])
-            for txt, y in (("400 FUNNY GIFTS · CANDLES, MUGS, TEES", 930), ("MADE IN THE USA · LINK IN BIO", 1020)):
+            for txt, y in (("FUNNY SWEATSHIRTS, TEES, MUGS & CANDLES", 930), ("MADE IN THE USA · LINK IN BIO", 1020)):
                 d.text(((W - d.textlength(txt, font=fs)) / 2, y), txt, font=fs, fill=tema["tinta"])
         yield img
 
 
-def video(fid):
-    out = BASE / f"videos/{fid}.mp4"
+def video(fid, foto=None, pie="FUNNY SOY CANDLE · 9 OZ", nombre=None):
+    out = BASE / f"videos/{nombre or fid}.mp4"
     out.parent.mkdir(exist_ok=True)
     p = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24",
                           "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-", "-c:v", "libx264", "-preset", "medium",
                           "-crf", "18", "-pix_fmt", "yuv420p", "-movflags", "+faststart", str(out)],
                          stdin=subprocess.PIPE)
-    for f in frames(fid):
+    for f in frames(fid, foto, pie):
         p.stdin.write(f.tobytes())
     p.stdin.close()
     p.wait()
