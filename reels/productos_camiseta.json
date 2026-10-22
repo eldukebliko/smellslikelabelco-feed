@@ -394,5 +394,17 @@
  "am10": {
   "producto": "6ad7a0639ee8fe3cb304c573",
   "publicado": true
+ },
+ "gx01": {
+  "producto": "6ad97b7859574bb76802803b",
+  "publicado": true
+ },
+ "gx02": {
+  "producto": "6ad97b7c71c2a8db8e09d1f4",
+  "publicado": true
+ },
+ "gx03": {
+  "producto": "6ad97b8192ab87333500fc02",
+  "publicado": true
  }
 }

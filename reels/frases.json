@@ -538,5 +538,24 @@
     "ocasion": "Thinking of you gift"
    }
   ]
+ },
+ "ilustrados": {
+  "items": [
+   {
+    "id": "gx01",
+    "frase": "Grand Theft Autopilot",
+    "ocasion": "Gamer gift"
+   },
+   {
+    "id": "gx02",
+    "frase": "Visit 2028 Spotted Over Texas",
+    "ocasion": "Car lover gift"
+   },
+   {
+    "id": "gx03",
+    "frase": "UFO Spotted Area 51",
+    "ocasion": "UFO lover gift"
+   }
+  ]
  }
 }

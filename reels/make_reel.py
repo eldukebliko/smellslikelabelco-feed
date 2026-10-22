@@ -1,7 +1,7 @@
 """Elige el producto del día, baja su mockup de Printify, fabrica el reel y deja public/reels/next.json.
 
 Prioridad por lo que deja cada venta (Printify, 22-oct-2026): sudadera ~17 $, taza ~13 $, vela y camiseta ~12 $.
-Hasta el 24-dic van primero las sudaderas de Navidad; después, rotación sudadera, taza, sudadera, camiseta, vela.
+La línea ilustrada (gx*) entra un día sí y otro no hasta que todas tengan reel. Hasta el 24-dic van primero las sudaderas de Navidad; después, rotación sudadera, taza, sudadera, camiseta, vela.
 No repite lo ya publicado (posted.json; las velas antiguas figuran solo con su id). Token en PRINTIFY_TOKEN.
 """
 import datetime, json, os, shutil, subprocess, sys
@@ -29,6 +29,7 @@ HASHTAGS = {
     "familia": "#giftsformom #giftsfordad #mothersdaygift #funnyfamily",
     "casa": "#housewarminggift #newhome #firsthome #homedecor",
     "amigos": "#bestfriendgift #selfcaregift #friendshipgift #funnygifts",
+    "ilustrados": "#flyingcar #gamergift #carlover #ufo #retrogaming",
 }
 
 
@@ -48,11 +49,16 @@ def productos(tipo):
 def elegir():
     frases = json.loads((AQUI / "frases.json").read_text())
     hechos = {x["id"] for x in posted()}
+    # Línea ilustrada (22-oct-2026): mientras quede alguna sin reel, va un día sí y otro no
+    nuevos = [(t, it) for it in frases["ilustrados"]["items"] for t in ("sudadera", "camiseta")
+              if it["id"] in productos(t) and clave(t, it["id"]) not in hechos]
+    if nuevos and len(hechos) % 2 == 0:
+        return nuevos[0]
     hoy = datetime.date.today()
     if (hoy.month, hoy.day) <= (12, 24):  # temporada: solo Navidad
         items = frases["navidad"]["items"]
     else:
-        items = [it for b in frases.values() for it in b["items"]]
+        items = [it for n, b in frases.items() if n != "ilustrados" for it in b["items"]]
     orden = [(t, it) for t in dict.fromkeys(ROTACION) for it in items if it["id"] in productos(t)]
     candidatos = [(t, it) for t, it in orden if clave(t, it["id"]) not in hechos] or orden
     toca = ROTACION[len(hechos) % len(ROTACION)]  # el tipo de hoy, según los reels ya publicados
