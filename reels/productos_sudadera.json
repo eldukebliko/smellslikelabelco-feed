@@ -150,5 +150,65 @@
  "na20": {
   "producto": "6adcdc5a5bb45b7c640f42a2",
   "publicado": true
+ },
+ "hw01": {
+  "producto": "6add233a878131e6ba0c3603",
+  "publicado": true
+ },
+ "hw02": {
+  "producto": "6add238051bc2a904809d568",
+  "publicado": true
+ },
+ "hw03": {
+  "producto": "6add23bcc093f46d270f494e",
+  "publicado": true
+ },
+ "hw04": {
+  "producto": "6add23fb2a0be195190ea79c",
+  "publicado": true
+ },
+ "hw05": {
+  "producto": "6add243c2a0be195190ea7bb",
+  "publicado": true
+ },
+ "hw06": {
+  "producto": "6add247621de5de6250218fe",
+  "publicado": true
+ },
+ "hw07": {
+  "producto": "6add24b7afea5e4b080933ca",
+  "publicado": true
+ },
+ "hw08": {
+  "producto": "6add24f76437b9edf205a4e2",
+  "publicado": true
+ },
+ "hw09": {
+  "producto": "6add253f77b560d6030877d1",
+  "publicado": true
+ },
+ "hw10": {
+  "producto": "6add258851bc2a904809d727",
+  "publicado": true
+ },
+ "hw11": {
+  "producto": "6add25cf878131e6ba0c37e8",
+  "publicado": true
+ },
+ "hw12": {
+  "producto": "6add261551bc2a904809d804",
+  "publicado": true
+ },
+ "hw13": {
+  "producto": "6add2664c093f46d270f4b4b",
+  "publicado": true
+ },
+ "hw14": {
+  "producto": "6add275b6437b9edf205a6cd",
+  "publicado": true
+ },
+ "hw15": {
+  "producto": "6add27a821de5de625021b3c",
+  "publicado": true
  }
 }

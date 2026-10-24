@@ -557,5 +557,84 @@
     "ocasion": "UFO lover gift"
    }
   ]
+ },
+ "halloween": {
+  "items": [
+   {
+    "id": "hw01",
+    "frase": "Resting Witch Face",
+    "ocasion": "Halloween party gift"
+   },
+   {
+    "id": "hw02",
+    "frase": "Ghost Mode: On",
+    "ocasion": "Halloween party gift"
+   },
+   {
+    "id": "hw03",
+    "frase": "Here for the Candy",
+    "ocasion": "Halloween party gift"
+   },
+   {
+    "id": "hw04",
+    "frase": "Creep It Real",
+    "ocasion": "Halloween party gift"
+   },
+   {
+    "id": "hw05",
+    "frase": "Professional Candy Inspector",
+    "ocasion": "Halloween party gift"
+   },
+   {
+    "id": "hw06",
+    "frase": "Pumpkin Spice & Bad Decisions",
+    "ocasion": "Halloween party gift"
+   },
+   {
+    "id": "hw07",
+    "frase": "Zombie Before Coffee",
+    "ocasion": "Halloween party gift"
+   },
+   {
+    "id": "hw08",
+    "frase": "Costume Loading...",
+    "ocasion": "Halloween party gift"
+   },
+   {
+    "id": "hw09",
+    "frase": "This Is My Lazy Costume",
+    "ocasion": "Halloween party gift"
+   },
+   {
+    "id": "hw10",
+    "frase": "Out of Office: Haunting",
+    "ocasion": "Halloween party gift"
+   },
+   {
+    "id": "hw11",
+    "frase": "Haunted by My To-Do List",
+    "ocasion": "Halloween party gift"
+   },
+   {
+    "id": "hw12",
+    "frase": "Ghosted Again",
+    "ocasion": "Halloween party gift"
+   },
+   {
+    "id": "hw13",
+    "frase": "Rattled and Fabulous",
+    "ocasion": "Halloween party gift"
+   },
+   {
+    "id": "hw14",
+    "frase": "Witch Way to the Candy?",
+    "ocasion": "Halloween party gift"
+   },
+   {
+    "id": "hw15",
+    "frase": "Spooky Introvert",
+    "ocasion": "Halloween party gift"
+   }
+  ]
  }
 }

@@ -21,6 +21,7 @@ TIPOS = {  # tipo -> (fichero de productos, texto bajo el mockup, nombre en el c
 }
 ROTACION = ["sudadera", "taza", "sudadera", "camiseta", "vela"]
 HASHTAGS = {
+    "halloween": "#halloween #halloweenshirt #spookyseason #halloweencostume #trickortreat",
     "navidad": "#secretsanta #whiteelephantgift #funnychristmasgifts #christmasgiftideas",
     "oficina": "#coworkergift #officehumor #funnycoworkergifts #retirementgift",
     "profesiones": "#nursegifts #teachergifts #funnygifts #giftsforher",
@@ -76,10 +77,15 @@ def elegir():
     if nuevos and len(hechos) % 2 == 0:
         return nuevos[0]
     hoy = datetime.date.today()
+    if hoy.month == 10:  # hasta el 31-oct: Halloween primero (tanda del 25-oct-2026)
+        halloween = [(t, it) for it in frases.get("halloween", {}).get("items", []) for t in ("sudadera", "camiseta")
+                     if it["id"] in productos(t) and clave(t, it["id"]) not in hechos]
+        if halloween:
+            return halloween[0]
     if (hoy.month, hoy.day) <= (12, 24):  # temporada: solo Navidad
         items = frases["navidad"]["items"]
     else:
-        items = [it for n, b in frases.items() if n != "ilustrados" for it in b["items"]]
+        items = [it for n, b in frases.items() if n not in ("ilustrados", "halloween") for it in b["items"]]
     orden = [(t, it) for t in dict.fromkeys(ROTACION) for it in items if it["id"] in productos(t)]
     candidatos = [(t, it) for t, it in orden if clave(t, it["id"]) not in hechos] or orden
     hay = {t for t, _ in candidatos}

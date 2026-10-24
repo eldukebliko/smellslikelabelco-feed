@@ -12,6 +12,7 @@ W, H = (int(sys.argv[1]), int(sys.argv[2])) if len(sys.argv) > 2 and sys.argv[1]
 
 INK = "#1E2A44"
 TEMAS = {
+    "halloween": {"papel": "#14101C", "tinta": "#FFF6E0", "sello": "#E8742A", "sello_tinta": "#14101C"},
     "ilustrados": {"papel": "#1A1424", "tinta": "#FFF6E0", "sello": "#B04BE0", "sello_tinta": "#FFF6E0"},
     "oficina": {"papel": "#F2D16B", "tinta": INK, "sello": "#E2553B", "sello_tinta": "#FFF6E0"},
     "navidad": {"papel": "#B8322A", "tinta": "#FFF6E0", "sello": "#1E2A44", "sello_tinta": "#FFF6E0"},
