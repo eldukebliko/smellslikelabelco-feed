@@ -31,7 +31,10 @@ def renovar(token):
 
 
 def main():
-    token, user = (os.environ.get("IG_TOKEN") or "").strip(), (os.environ.get("IG_USER_ID") or "").strip()
+    partes = (os.environ.get("IG_TOKEN") or "").split()
+    print("token: %d trozos, longitudes %s, empiezan por %s" % (len(partes), [len(x) for x in partes], [x[:4] for x in partes]))
+    token = next((x for x in partes if x.startswith("IG")), partes[0] if partes else "")
+    user = (os.environ.get("IG_USER_ID") or "").strip()
     if not token or not user:
         print("Sin IG_TOKEN/IG_USER_ID: no se publica (solo vista previa).")
         return
