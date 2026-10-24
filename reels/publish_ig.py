@@ -23,7 +23,7 @@ def llamar(metodo, url, datos=None):
 def renovar(token):
     nuevo = llamar("GET", "https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token"
                           "&access_token=" + token).get("access_token")
-    if nuevo and os.environ.get("GH_PAT") and nuevo != token:
+    if nuevo and os.environ.get("GH_PAT", "").strip() and nuevo != token:
         subprocess.run(["gh", "secret", "set", "IG_TOKEN", "-R", os.environ["GITHUB_REPOSITORY"]],
                        input=nuevo.encode(), env={**os.environ, "GH_TOKEN": os.environ["GH_PAT"]}, check=True)
         print("token renovado y guardado")
@@ -31,11 +31,14 @@ def renovar(token):
 
 
 def main():
-    token, user = os.environ.get("IG_TOKEN"), os.environ.get("IG_USER_ID")
+    token, user = (os.environ.get("IG_TOKEN") or "").strip(), (os.environ.get("IG_USER_ID") or "").strip()
     if not token or not user:
         print("Sin IG_TOKEN/IG_USER_ID: no se publica (solo vista previa).")
         return
-    token = renovar(token)
+    try:
+        token = renovar(token)
+    except RuntimeError as e:  # Meta solo renueva tokens de más de 24 h; no impide publicar
+        print("sin renovar:", str(e).split("->")[-1][:200])
     sig = json.loads((AQUI.parent / "public" / "reels" / "next.json").read_text())
     video_url = os.environ["PAGES_URL"].rstrip("/") + "/" + sig["video"]
     cont = llamar("POST", f"{GRAPH}/{user}/media", {"media_type": "REELS", "video_url": video_url,
