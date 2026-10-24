@@ -1,7 +1,8 @@
 """Publica en Instagram el reel que dejó make_reel.py (API de Instagram con inicio de sesión de Instagram).
 
 Variables: IG_TOKEN (token largo), IG_USER_ID, PAGES_URL (base pública del vídeo).
-Además renueva el token (dura 60 días) y lo guarda en el secreto IG_TOKEN si hay GH_PAT.
+Además renueva el token (dura 60 días) y lo guarda cifrado en reels/ig_token.enc con la clave IG_KEY
+(AES-256 de openssl; la clave solo está en los secretos del repo). IG_TOKEN solo hace falta la primera vez.
 """
 import json, os, subprocess, sys, time, urllib.parse, urllib.request
 from pathlib import Path
@@ -20,24 +21,42 @@ def llamar(metodo, url, datos=None):
         raise RuntimeError(f"{metodo} {url.split('?')[0]} -> {e.code}: {e.read().decode()[:500]}")
 
 
+CIFRADO = AQUI / "ig_token.enc"
+OPENSSL = ["openssl", "enc", "-aes-256-cbc", "-pbkdf2", "-iter", "200000", "-a", "-A", "-pass", "env:IG_KEY"]
+
+
+def leer_token():
+    if CIFRADO.exists() and os.environ.get("IG_KEY"):
+        r = subprocess.run(OPENSSL + ["-d", "-in", str(CIFRADO)], capture_output=True)
+        if r.returncode == 0 and r.stdout.strip():
+            return r.stdout.decode().strip()
+        print("no se pudo descifrar ig_token.enc; uso IG_TOKEN")
+    partes = (os.environ.get("IG_TOKEN") or "").split()
+    return next((x for x in partes if x.startswith("IG")), partes[0] if partes else "")
+
+
+def guardar_token(token):
+    if os.environ.get("IG_KEY"):
+        subprocess.run(OPENSSL + ["-out", str(CIFRADO)], input=token.encode(), check=True)
+
+
 def renovar(token):
     nuevo = llamar("GET", "https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token"
                           "&access_token=" + token).get("access_token")
-    if nuevo and os.environ.get("GH_PAT", "").strip() and nuevo != token:
-        subprocess.run(["gh", "secret", "set", "IG_TOKEN", "-R", os.environ["GITHUB_REPOSITORY"]],
-                       input=nuevo.encode(), env={**os.environ, "GH_TOKEN": os.environ["GH_PAT"]}, check=True)
-        print("token renovado y guardado")
+    if nuevo:
+        guardar_token(nuevo)
+        print("token renovado y guardado cifrado")
     return nuevo or token
 
 
 def main():
-    partes = (os.environ.get("IG_TOKEN") or "").split()
-    print("token: %d trozos, longitudes %s, empiezan por %s" % (len(partes), [len(x) for x in partes], [x[:4] for x in partes]))
-    token = next((x for x in partes if x.startswith("IG")), partes[0] if partes else "")
+    token = leer_token()
     user = (os.environ.get("IG_USER_ID") or "").strip()
     if not token or not user:
         print("Sin IG_TOKEN/IG_USER_ID: no se publica (solo vista previa).")
         return
+    if not CIFRADO.exists():
+        guardar_token(token)  # primera vez: arranca la cadena cifrada
     try:
         token = renovar(token)
     except RuntimeError as e:  # Meta solo renueva tokens de más de 24 h; no impide publicar

@@ -42,8 +42,29 @@ def posted():
     return json.loads(p.read_text()) if p.exists() else []
 
 
+_VIVOS = None
+
+
+def vivos():
+    """Ids de los productos que existen hoy en la tienda (se borran prendas: 24-oct-2026)."""
+    global _VIVOS
+    if _VIVOS is None:
+        _VIVOS, pag = set(), 1
+        while True:
+            r = json.loads(subprocess.run(
+                ["curl", "-sf", "-H", "Authorization: Bearer " + os.environ["PRINTIFY_TOKEN"],
+                 f"https://api.printify.com/v1/shops/29354750/products.json?limit=50&page={pag}"],
+                capture_output=True, check=True).stdout)
+            _VIVOS |= {x["id"] for x in r["data"]}
+            if pag >= r["last_page"]:
+                break
+            pag += 1
+    return _VIVOS
+
+
 def productos(tipo):
-    return json.loads((AQUI / TIPOS[tipo][0]).read_text())
+    todos = json.loads((AQUI / TIPOS[tipo][0]).read_text())
+    return {fid: d for fid, d in todos.items() if d["producto"] in vivos()}
 
 
 def elegir():
@@ -61,7 +82,10 @@ def elegir():
         items = [it for n, b in frases.items() if n != "ilustrados" for it in b["items"]]
     orden = [(t, it) for t in dict.fromkeys(ROTACION) for it in items if it["id"] in productos(t)]
     candidatos = [(t, it) for t, it in orden if clave(t, it["id"]) not in hechos] or orden
-    toca = ROTACION[len(hechos) % len(ROTACION)]  # el tipo de hoy, según los reels ya publicados
+    hay = {t for t, _ in candidatos}
+    turnos = [t for t in ROTACION if t in hay] or ROTACION  # solo los tipos que quedan en la tienda
+    n = sum(1 for h in hechos if ":gx" not in h)  # reels publicados fuera de la línea ilustrada
+    toca = turnos[n % len(turnos)]  # el tipo de hoy
     return next(((t, it) for t, it in candidatos if t == toca), candidatos[0])
 
 
@@ -86,7 +110,7 @@ def caption(tipo, nicho, it):
     o, nombre, tags = it["ocasion"], TIPOS[tipo][2], TIPOS[tipo][3]
     return (f"{videos.gancho(it).capitalize()}\n\n"
             f"\"{it['frase']}\" A funny {nombre}, the perfect {o.lower()}. Made to order in the USA.\n"
-            f"Shop 400 funny gifts: link in bio 👆\n\n"
+            f"Shop more funny gifts: link in bio 👆\n\n"
             f"{HASHTAGS.get(nicho, '#funnygifts')} {tags} #giftideas #smellslikelabelco")
 
 

@@ -52,16 +52,17 @@ jobs:
         env:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
-          GH_PAT: ${{ secrets.GH_PAT }}
+          IG_KEY: ${{ secrets.IG_KEY }}
           PAGES_URL: https://eldukebliko.github.io/smellslikelabelco-feed
           GITHUB_REPOSITORY: ${{ github.repository }}
         run: |
           mkdir -p public/reels
           curl -sf https://eldukebliko.github.io/smellslikelabelco-feed/reels/next.json -o public/reels/next.json
           python reels/publish_ig.py
-      - name: Guardar lo publicado
+      - name: Guardar lo publicado y el token renovado
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add reels/posted.json 2>/dev/null || true
+          git add reels/posted.json reels/ig_token.enc 2>/dev/null || true
           git diff --cached --quiet || (git commit -m "Reel publicado" && git push)
