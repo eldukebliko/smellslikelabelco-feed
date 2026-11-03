@@ -115,7 +115,7 @@ def mockup(tipo, fid):
 def caption(tipo, nicho, it):
     o, nombre, tags = it["ocasion"], TIPOS[tipo][2], TIPOS[tipo][3]
     return (f"{videos.gancho(it).capitalize()}\n\n"
-            f"\"{it['frase']}\" A funny {nombre}, the perfect {o.lower()}. Made to order in the USA.\n"
+            f"\"{it.get('frase_ropa', it['frase']) if tipo in ('sudadera', 'camiseta') else it['frase']}\" A funny {nombre}, the perfect {o.lower()}. Made to order in the USA.\n"
             f"Shop more funny gifts: link in bio 👆\n\n"
             f"{HASHTAGS.get(nicho, '#funnygifts')} {tags} #giftideas #smellslikelabelco")
 

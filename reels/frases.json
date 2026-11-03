@@ -5,12 +5,14 @@
    {
     "id": "of01",
     "frase": "Your Last Reply-All",
-    "ocasion": "Farewell gift for coworker"
+    "ocasion": "Farewell gift for coworker",
+    "frase_ropa": "Retired. Please Remove Me From This Thread."
    },
    {
     "id": "of02",
     "frase": "You Finally Escaped",
-    "ocasion": "Leaving job gift"
+    "ocasion": "Leaving job gift",
+    "frase_ropa": "I Escaped. Tell No One Where I Went."
    },
    {
     "id": "of03",
@@ -25,12 +27,14 @@
    {
     "id": "of05",
     "frase": "Every Day Is Saturday Now",
-    "ocasion": "Retirement gift"
+    "ocasion": "Retirement gift",
+    "frase_ropa": "Retired. Monday Is Just a Rumor Now."
    },
    {
     "id": "of06",
     "frase": "Another Lap Around the Office",
-    "ocasion": "Work anniversary gift"
+    "ocasion": "Work anniversary gift",
+    "frase_ropa": "Still Here. Nobody Knows Why."
    },
    {
     "id": "of07",
@@ -40,12 +44,14 @@
    {
     "id": "of08",
     "frase": "First Day Jitters",
-    "ocasion": "New job congrats gift"
+    "ocasion": "New job congrats gift",
+    "frase_ropa": "New Job. Still Can't Find the Bathroom."
    },
    {
     "id": "of09",
     "frase": "The Office Just Got Boring",
-    "ocasion": "Farewell gift for coworker"
+    "ocasion": "Farewell gift for coworker",
+    "frase_ropa": "The Fun One Is Leaving. Good Luck, Everyone."
    },
    {
     "id": "of10",
@@ -55,27 +61,32 @@
    {
     "id": "of11",
     "frase": "Muted on Every Call",
-    "ocasion": "Remote worker gift"
+    "ocasion": "Remote worker gift",
+    "frase_ropa": "I Was on Mute. On Purpose."
    },
    {
     "id": "of12",
     "frase": "Circling Back, Again",
-    "ocasion": "Funny coworker gift"
+    "ocasion": "Funny coworker gift",
+    "frase_ropa": "Let's Circle Back (Never)"
    },
    {
     "id": "of13",
     "frase": "Survived Another Performance Review",
-    "ocasion": "Coworker gift"
+    "ocasion": "Coworker gift",
+    "frase_ropa": "Meets Expectations. Barely."
    },
    {
     "id": "of14",
     "frase": "Desk Plant Keeper",
-    "ocasion": "Office gift for her"
+    "ocasion": "Office gift for her",
+    "frase_ropa": "My Desk Plant Is My Favorite Coworker"
    },
    {
     "id": "of15",
     "frase": "Zoom Background Hero",
-    "ocasion": "Work from home gift"
+    "ocasion": "Work from home gift",
+    "frase_ropa": "Professional From the Waist Up"
    },
    {
     "id": "of16",
@@ -90,12 +101,14 @@
    {
     "id": "of18",
     "frase": "Spreadsheet Wizard Retiring",
-    "ocasion": "Retirement gift for her"
+    "ocasion": "Retirement gift for her",
+    "frase_ropa": "Retired. Will No Longer Fix Your Spreadsheet."
    },
    {
     "id": "of19",
     "frase": "Last Day, No Regrets",
-    "ocasion": "Last day at work gift"
+    "ocasion": "Last day at work gift",
+    "frase_ropa": "Last Day. Took the Good Stapler."
    },
    {
     "id": "of20",
@@ -119,7 +132,7 @@
    },
    {
     "id": "na03",
-    "frase": "Secret Santa Blew the Budget",
+    "frase": "I Drew Your Name and Panicked",
     "ocasion": "Secret Santa gift"
    },
    {
@@ -134,12 +147,12 @@
    },
    {
     "id": "na06",
-    "frase": "Leftover Pie for Breakfast",
+    "frase": "I'm Only Here for the Leftovers",
     "ocasion": "Holiday hostess gift"
    },
    {
     "id": "na07",
-    "frase": "Untangling the Lights. Again.",
+    "frase": "Dad Untangled the Lights. Nobody Talk to Him.",
     "ocasion": "Funny Christmas gift for dad"
    },
    {
@@ -154,7 +167,7 @@
    },
    {
     "id": "na10",
-    "frase": "Wrapping Paper Everywhere",
+    "frase": "Mom Wrapped Everything. Including the Cat.",
     "ocasion": "Christmas gift for mom"
    },
    {
@@ -164,7 +177,7 @@
    },
    {
     "id": "na12",
-    "frase": "Cookies Before Dinner",
+    "frase": "The Cookies Were for Santa. I Am Santa Now.",
     "ocasion": "Christmas gift for kids at heart"
    },
    {
@@ -174,12 +187,12 @@
    },
    {
     "id": "na14",
-    "frase": "Elf on Strike",
+    "frase": "Mom Is Santa. Mom Is Tired.",
     "ocasion": "Funny Christmas gift for mom"
    },
    {
     "id": "na15",
-    "frase": "Holiday Budget Destroyed",
+    "frase": "I Spent All My Money on You. Act Surprised.",
     "ocasion": "Secret Santa gift under 25"
    },
    {
@@ -189,7 +202,7 @@
    },
    {
     "id": "na17",
-    "frase": "Fruitcake Survivor",
+    "frase": "I Ate Grandma's Fruitcake and Lived",
     "ocasion": "Funny holiday gift"
    },
    {
@@ -215,12 +228,14 @@
    {
     "id": "pr01",
     "frase": "A Twelve-Hour Shift",
-    "ocasion": "Nurse gift"
+    "ocasion": "Nurse gift",
+    "frase_ropa": "My Shift Ended Four Hours Ago"
    },
    {
     "id": "pr02",
     "frase": "Summer Break Is Coming",
-    "ocasion": "Teacher appreciation gift"
+    "ocasion": "Teacher appreciation gift",
+    "frase_ropa": "Teacher. Counting Down to June Since August."
    },
    {
     "id": "pr03",
@@ -235,22 +250,26 @@
    {
     "id": "pr05",
     "frase": "Officially Billable",
-    "ocasion": "Law school graduation gift"
+    "ocasion": "Law school graduation gift",
+    "frase_ropa": "I'll Need That in Writing"
    },
    {
     "id": "pr06",
     "frase": "Muddy Paws & Big Hearts",
-    "ocasion": "Vet tech gift"
+    "ocasion": "Vet tech gift",
+    "frase_ropa": "Yes, He Bit Me. Yes, I Still Love Him."
    },
    {
     "id": "pr07",
     "frase": "Hairspray & Gossip",
-    "ocasion": "Hairstylist gift"
+    "ocasion": "Hairstylist gift",
+    "frase_ropa": "I Know Your Secrets and Your Real Hair Color"
    },
    {
     "id": "pr08",
     "frase": "Have You Been Flossing?",
-    "ocasion": "Dental hygienist gift"
+    "ocasion": "Dental hygienist gift",
+    "frase_ropa": "You Haven't Been Flossing. I Can Tell."
    },
    {
     "id": "pr09",
@@ -260,7 +279,8 @@
    {
     "id": "pr10",
     "frase": "Call Me Doctor Now",
-    "ocasion": "PhD graduation gift"
+    "ocasion": "PhD graduation gift",
+    "frase_ropa": "Doctor. But Not the Useful Kind."
    }
   ]
  },
@@ -300,22 +320,26 @@
    {
     "id": "cu07",
     "frase": "Finally Twenty-One",
-    "ocasion": "21st birthday gift"
+    "ocasion": "21st birthday gift",
+    "frase_ropa": "Twenty-One and Already Regretting It"
    },
    {
     "id": "cu08",
     "frase": "Your Knees Are Older Than You",
-    "ocasion": "Birthday gift for dad"
+    "ocasion": "Birthday gift for dad",
+    "frase_ropa": "My Knees Are Older Than Me"
    },
    {
     "id": "cu09",
     "frase": "Birthday Nap Approved",
-    "ocasion": "Birthday gift for her"
+    "ocasion": "Birthday gift for her",
+    "frase_ropa": "My Birthday Wish Was a Nap"
    },
    {
     "id": "cu10",
     "frase": "Aged Like Fine Cheese",
-    "ocasion": "Funny birthday gift for friend"
+    "ocasion": "Funny birthday gift for friend",
+    "frase_ropa": "Aged Like Cheese, Not Wine"
    }
   ]
  },
@@ -360,12 +384,14 @@
    {
     "id": "bo08",
     "frase": "Said Yes Before Coffee",
-    "ocasion": "Engagement gift for her"
+    "ocasion": "Engagement gift for her",
+    "frase_ropa": "I Said Yes Before He Finished the Question"
    },
    {
     "id": "bo09",
     "frase": "First Anniversary, Still Laughing",
-    "ocasion": "First anniversary gift"
+    "ocasion": "First anniversary gift",
+    "frase_ropa": "One Year Down. Forever to Go. Send Help."
    },
    {
     "id": "bo10",
@@ -400,12 +426,14 @@
    {
     "id": "fa05",
     "frase": "Survived My Teenage Years",
-    "ocasion": "Gift for mom"
+    "ocasion": "Gift for mom",
+    "frase_ropa": "I Survived Your Teenage Years"
    },
    {
     "id": "fa06",
     "frase": "New Dad, No Sleep",
-    "ocasion": "New dad gift"
+    "ocasion": "New dad gift",
+    "frase_ropa": "New Dad. I Have Seen Things."
    },
    {
     "id": "fa07",
@@ -435,42 +463,50 @@
    {
     "id": "ca01",
     "frase": "First Home, Zero Furniture",
-    "ocasion": "Housewarming gift"
+    "ocasion": "Housewarming gift",
+    "frase_ropa": "We Own a House Now. We Sit on the Floor."
    },
    {
     "id": "ca02",
     "frase": "Our First Mortgage Payment",
-    "ocasion": "New homeowner gift"
+    "ocasion": "New homeowner gift",
+    "frase_ropa": "Homeowner (The Bank Disagrees)"
    },
    {
     "id": "ca03",
     "frase": "Finally Not Paying Rent",
-    "ocasion": "First home gift"
+    "ocasion": "First home gift",
+    "frase_ropa": "No More Landlord. Now Everything Is My Fault."
    },
    {
     "id": "ca04",
     "frase": "Boxes Still Unpacked",
-    "ocasion": "Moving gift"
+    "ocasion": "Moving gift",
+    "frase_ropa": "Moved In Two Years Ago. Still Unpacking."
    },
    {
     "id": "ca05",
     "frase": "Weekend Hardware Store Runs",
-    "ocasion": "Housewarming gift for him"
+    "ocasion": "Housewarming gift for him",
+    "frase_ropa": "Just One Quick Trip to the Hardware Store"
    },
    {
     "id": "ca06",
     "frase": "Plant Parent, Barely Watering",
-    "ocasion": "Plant lover gift"
+    "ocasion": "Plant lover gift",
+    "frase_ropa": "My Plants Are Alive. Somehow."
    },
    {
     "id": "ca07",
     "frase": "Dog Hair on Everything",
-    "ocasion": "Dog mom gift"
+    "ocasion": "Dog mom gift",
+    "frase_ropa": "Dog Hair Is a Fabric Now"
    },
    {
     "id": "ca08",
     "frase": "Cat in Charge Here",
-    "ocasion": "Cat lover gift"
+    "ocasion": "Cat lover gift",
+    "frase_ropa": "I Live Here. The Cat Owns It."
    },
    {
     "id": "ca09",
@@ -480,7 +516,8 @@
    {
     "id": "ca10",
     "frase": "Fresh Paint and Regret",
-    "ocasion": "New house gift"
+    "ocasion": "New house gift",
+    "frase_ropa": "We Painted It Ourselves. We're No Longer Speaking."
    }
   ]
  },
@@ -505,12 +542,14 @@
    {
     "id": "am04",
     "frase": "One Year Stronger",
-    "ocasion": "Milestone gift for friend"
+    "ocasion": "Milestone gift for friend",
+    "frase_ropa": "Still Friends After That Road Trip"
    },
    {
     "id": "am05",
     "frase": "Long Distance, Same Sky",
-    "ocasion": "Long distance friendship gift"
+    "ocasion": "Long distance friendship gift",
+    "frase_ropa": "Long Distance Best Friend. Still Answers at 3 AM."
    },
    {
     "id": "am06",
@@ -520,12 +559,14 @@
    {
     "id": "am07",
     "frase": "Boundaries Finally Set",
-    "ocasion": "Self care gift for her"
+    "ocasion": "Self care gift for her",
+    "frase_ropa": "I Have Boundaries Now. Please Leave."
    },
    {
     "id": "am08",
     "frase": "Ten Thousand Steps Done",
-    "ocasion": "Gift for walker"
+    "ocasion": "Gift for walker",
+    "frase_ropa": "10,000 Steps. All of Them to the Fridge."
    },
    {
     "id": "am09",
