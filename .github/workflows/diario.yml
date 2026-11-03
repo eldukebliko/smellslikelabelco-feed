@@ -66,3 +66,14 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add reels/posted.json reels/ig_token.enc 2>/dev/null || true
           git diff --cached --quiet || (git commit -m "Reel publicado" && git push)
+  aviso:
+    needs: [build, publicar]
+    if: failure()
+    runs-on: ubuntu-latest
+    steps:
+      - name: Avisar a Pablo por ntfy (el 31-oct falló 3 noches sin que nadie lo viera)
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+        run: |
+          [ -n "$NTFY_TOPIC" ] || { echo "Falta el secreto NTFY_TOPIC"; exit 0; }
+          curl -s -H "Title: Smells Like" -d "El reel diario de Instagram ha fallado esta noche. Dile a Claudia que lo mire." "https://ntfy.sh/$NTFY_TOPIC"
